@@ -1,0 +1,358 @@
+/* BODY */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to top,
+    rgba(226, 165, 96, 0.877),
+    rgba(201, 186, 51, 0.726)
+  );
+}
+
+/* HEADER */
+
+.header {
+  color: rgb(255, 255, 255);
+  background-image: url(./imagenes/F.pagina.jpg);
+  text-align: center;
+  top: 0;
+  position: sticky;
+  margin-left: -10px;
+  z-index: 100;
+}
+
+.subtitulo {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.enlaces li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 100px;
+  background-color: rgba(250, 235, 215, 0.74);
+}
+
+.enlaces a {
+  color: rgb(0, 0, 0);
+  font-size: 19px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none; /* esto es para sacar lo azul de los links */
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+/* MAIN */
+
+main {
+  margin-right: 10px;
+}
+
+.BoxModel {
+  margin-left: 40%;
+  margin-bottom: 20px;
+  box-shadow: 8px 8px 10px rgb(133, 133, 80);
+  box-sizing: border-box;
+}
+
+aside {
+  width: 100px;
+}
+
+.titulo-menu {
+  display: flex;
+  justify-content: center;
+  color: #221f047a;
+  background-color: rgba(240, 248, 255, 0.247);
+}
+
+/* ARTICLE */
+
+.parrafo-main {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 15px;
+  background-color: rgba(214, 28, 106, 0.178);
+}
+.parrafo-main2 {
+  text-align: end;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  width: auto;
+  height: 80px;
+  background-color: rgba(37, 27, 10, 0.336);
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: -10px;
+}
+
+footer iframe {
+  height: 76px;
+  width: 150px;
+}
+footer img {
+  height: 76px;
+  width: auto;
+}
+
+.derechos {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* PAGINAS */
+
+.logo {
+  display: flex;
+  justify-content: left;
+  box-shadow: 8px 8px 10px rgb(133, 133, 80);
+  box-sizing: border-box;
+  color: rgba(143, 14, 53, 0.527);
+  flex-direction: column;
+}
+
+/* productos */
+
+.lista-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-style: italic;
+  color: rgba(155, 22, 22, 0.76);
+  margin-top: 100px;
+}
+
+.lista-productos2 {
+  margin: 5px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(240, 248, 255, 0.247);
+  border-radius: 8px;
+}
+
+/* recetas tips y mas */
+
+.videos {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.videos iframe {
+  margin: 10px;
+}
+
+.titulo-paginas {
+  display: flex;
+  color: #000000bd;
+  background-color: rgba(240, 248, 255, 0.247);
+}
+
+.parrafo-videos {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: larger;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* contactanos */
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* GRIDS */
+
+#grilla {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0% auto auto;
+  grid-template-rows: 100px auto auto 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "nav header header" "nav aside main" "nav footer footer";
+}
+
+.border {
+  border: 2px outset rgba(231, 212, 159, 0.685);
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+/* grilla recetas y tips */
+
+#grilla2 {
+  width: 100%;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "nav header header" "nav main main" "nav footer footer";
+}
+
+/* media queris */
+
+@media screen and (max-width: 500px) {
+  /* INDEX */
+
+  .BoxModel {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+  }
+
+  .enlaces,
+  .enlases li a {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 65px;
+    justify-items: end;
+    justify-content: space-between;
+  }
+
+  .header {
+    margin: none;
+    padding: none;
+  }
+
+  .subtitulo {
+    font-size: 15px;
+  }
+  aside {
+    display: none;
+  }
+  .parrafo-main {
+    display: none;
+  }
+
+  /* Recetas y Tips */
+
+  .videos {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0%;
+  }
+  .parrafo-videos {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  #navRecetas {
+    display: grid;
+    grid-template-columns: 80px 50px 80px 55px;
+    justify-items: end;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .BoxModel {
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  main {
+    margin-bottom: -50px;
+  }
+
+  aside {
+    margin-bottom: -50px;
+  }
+}
+
+/* ANIMACIONES */
+
+@keyframes aniBox {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#aniBox {
+  animation: aniBox 2s ease 0s 1 normal forwards;
+}
+
