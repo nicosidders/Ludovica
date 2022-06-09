@@ -21,8 +21,8 @@ body {
   text-align: center;
   top: 0;
   position: sticky;
-  margin-left: -10px;
   z-index: 100;
+  margin-left: -10px;
 }
 
 .subtitulo {
@@ -58,15 +58,14 @@ main {
 }
 
 .BoxModel {
-  margin-left: 40%;
   margin-bottom: 20px;
   box-shadow: 8px 8px 10px rgb(133, 133, 80);
   box-sizing: border-box;
 }
 
-aside {
+/*aside {
   width: 100px;
-}
+}*/
 
 .titulo-menu {
   display: flex;
@@ -193,7 +192,7 @@ footer img {
   grid-template-rows: 100px auto auto 10px;
   column-gap: 10px;
   row-gap: 10px;
-  grid-template-areas: "nav header header" "nav aside main" "nav footer footer";
+  grid-template-areas: "nav header header" "nav main main" "nav footer footer";
 }
 
 .border {
@@ -239,7 +238,7 @@ aside {
     width: 300px;
     height: 400px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: 80px;
     margin-top: 50px;
   }
 
@@ -288,6 +287,15 @@ aside {
   }
 }
 
+/* PRODUCTOS*/
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0%;
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 1200px) {
   .BoxModel {
     display: flex;
@@ -300,9 +308,9 @@ aside {
     margin-bottom: -50px;
   }
 
-  aside {
-    margin-bottom: -50px;
-  }
+  /*aside {
+    margin-bottom: 50px;
+  }*/
 }
 
 /* ANIMACIONES */
@@ -355,4 +363,3 @@ aside {
 #aniBox {
   animation: aniBox 2s ease 0s 1 normal forwards;
 }
-
